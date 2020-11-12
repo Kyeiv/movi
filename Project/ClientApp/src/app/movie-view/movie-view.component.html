@@ -1,0 +1,80 @@
+<div class="container-fluid movie-view" *ngIf="movie">
+    <div class="row">
+      <div class="col-12">
+        <mat-card>
+          <mat-card-header>
+            <mat-card-title>
+              {{ movie.Title }}
+            </mat-card-title>
+            <mat-card-subtitle>
+              {{ movie.Year }}
+            </mat-card-subtitle>
+          </mat-card-header>
+          <img mat-card-image [src]="movie.Poster" />
+          <mat-card-content>
+            {{ movie.Plot }}
+          </mat-card-content>
+          <mat-card-content
+            style="display: flex; flex-direction: column; width: 100%"
+          >
+            <mat-form-field appearance="fill">
+              <mat-label>Director</mat-label>
+              <input
+                matInput
+                readonly = "true"
+                placeholder="Placeholder"
+                style="pointer-events: none"
+                [value]="movie.Director"
+              />
+            </mat-form-field>
+  
+            <mat-form-field appearance="fill">
+              <mat-label>Actors</mat-label>
+              <input
+                matInput
+                readonly = "true"
+                placeholder="Placeholder"
+                style="pointer-events: none"
+                [value]="movie.Actors"
+              />
+            </mat-form-field>
+  
+            <mat-form-field appearance="fill">
+              <mat-label>Genre</mat-label>
+              <input
+                matInput
+                readonly = "true"
+                placeholder="Placeholder"
+                style="pointer-events: none"
+                [value]="movie.Genre"
+              />
+            </mat-form-field>
+  
+            <mat-form-field appearance="fill">
+              <mat-label>Country</mat-label>
+              <input
+                matInput
+                readonly = "true"
+                placeholder="Placeholder"
+                style="pointer-events: none"
+                [value]="movie.Country"
+              />
+            </mat-form-field>
+          </mat-card-content>
+          <mat-card-footer>
+            <star-rating
+              [showHalfStars]="true"
+              [hoverEnabled]="true"
+              size="large"
+              staticColor="ok"
+              [rating]="movie.Rate"
+              (ratingChange)="onRatingChange($event)"
+            ></star-rating>
+          </mat-card-footer>
+          <button mat-raised-button (click)="goBack()">
+            Back to search
+          </button>
+        </mat-card>
+      </div>
+    </div>
+  </div>

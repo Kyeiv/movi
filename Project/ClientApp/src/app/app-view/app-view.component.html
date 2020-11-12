@@ -1,0 +1,25 @@
+<mat-toolbar style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px">
+    <h1 class="title">Movi.</h1>
+    <div style="display: flex;">
+        <nav mat-tab-nav-bar>
+          <a mat-tab-link
+             [routerLink]="'/app/my-movies'"
+             routerLinkActive #rla="routerLinkActive"
+             [active]="router.url === '/app/my-movies'"
+             [routerLinkActiveOptions]="{ exact: true }">
+            {{'My Movies'}}
+          </a>
+          <a mat-tab-link
+             [routerLink]="'/app/search'"
+             routerLinkActive #rla="routerLinkActive"
+             [active]="router.url === '/app/search'"
+             [routerLinkActiveOptions]="{ exact: true }">
+            {{'Search'}}
+          </a>
+        </nav>
+        <button mat-button (click)="logout()">
+          Logout
+        </button>
+    </div>
+</mat-toolbar>
+<router-outlet></router-outlet>

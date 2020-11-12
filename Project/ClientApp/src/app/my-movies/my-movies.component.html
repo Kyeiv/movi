@@ -1,0 +1,27 @@
+<div class="container-fluid">
+    <div class="row">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <mat-card style="display: flex; flex-direction: column; width: 100%;">
+              <mat-form-field>
+                <input matInput type="text" placeholder="Search" [formControl]="filterControl">
+              </mat-form-field>
+            </mat-card>
+          </div>
+        </div>
+        <div class="row">
+          <ngx-masonry style="width: 100%;" [ordered]="true">
+            <div
+              [routerLink] = "'/app/movie/' + movie.imdbID + '/my-movies'"
+              class="col-lg-3"
+              ngxMasonryItem
+              *ngFor="let movie of movies$ | async"
+            >
+              <movie [movie]="movie"></movie>
+            </div>
+          </ngx-masonry>
+        </div>
+      </div>
+    </div>
+  </div>
