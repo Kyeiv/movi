@@ -4,11 +4,22 @@
     <projectFile>Project/Project.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2cc3b51-6062-4a72-b699-9dd3dcb5527e" name="Default Changelist" comment="" />
+    <list default="true" id="b2cc3b51-6062-4a72-b699-9dd3dcb5527e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Project/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/ClientApp/src/app/movie.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Project/ClientApp/src/app/movie.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/Controllers/MoviesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Controllers/MoviesController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/Controllers/UsersController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Controllers/UsersController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/Controllers/WeatherForecastController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/WeatherForecast.cs" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -17,15 +28,16 @@
         <option value="$PROJECT_DIR$/Project/Models/UserInfo.cs" />
         <option value="$PROJECT_DIR$/Project/appsettings.json" />
         <option value="$PROJECT_DIR$/Project/Controllers/TokenController.cs" />
-        <option value="$PROJECT_DIR$/Project/Controllers/MoviesController.cs" />
-        <option value="$PROJECT_DIR$/Project/Controllers/UsersController.cs" />
         <option value="$PROJECT_DIR$/Project/Startup.cs" />
         <option value="$PROJECT_DIR$/Project/Models/Movie.cs" />
         <option value="$PROJECT_DIR$/Project/Models/PostgresContext.cs" />
+        <option value="$PROJECT_DIR$/Project/Controllers/MoviesController.cs" />
+        <option value="$PROJECT_DIR$/Project/Controllers/UsersController.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1jk94UE5ZIoyxXgEAHi6vTraBA2" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -84,6 +96,7 @@
       <workItem from="1605035736672" duration="2523000" />
       <workItem from="1605115572033" duration="10413000" />
       <workItem from="1605183177337" duration="1989000" />
+      <workItem from="1605186299611" duration="2582000" />
     </task>
     <servers />
   </component>
@@ -96,6 +109,14 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="749" y="422" width="590" height="367" key="Github.ShareDialog" timestamp="1605186420535">
+      <screen x="62" y="0" width="1618" height="1050" />
+    </state>
+    <state x="749" y="422" width="590" height="367" key="Github.ShareDialog/62.0.1618.1050/1680.0.1378.900@62.0.1618.1050" timestamp="1605186420535" />
+    <state x="664" y="230" key="Github.UntrackedFilesDialog" timestamp="1605186443871">
+      <screen x="62" y="0" width="1618" height="1050" />
+    </state>
+    <state x="664" y="230" key="Github.UntrackedFilesDialog/62.0.1618.1050/1680.0.1378.900@62.0.1618.1050" timestamp="1605186443871" />
     <state width="1575" height="267" key="GridCell.Tab.0.bottom" timestamp="1605186147047">
       <screen x="62" y="0" width="1618" height="1050" />
     </state>
@@ -116,6 +137,10 @@
     </state>
     <state width="1335" height="396" key="GridCell.Tab.0.right/62.0.1618.1050/1680.0.1378.900@1680.0.1378.900" timestamp="1605038925113" />
     <state width="1575" height="267" key="GridCell.Tab.0.right/62.0.1618.1050/1680.0.1378.900@62.0.1618.1050" timestamp="1605186147046" />
+    <state x="463" y="256" key="Rider.ProjectTemplateDialog.Size" timestamp="1605189937540">
+      <screen x="62" y="0" width="1618" height="1050" />
+    </state>
+    <state x="463" y="256" key="Rider.ProjectTemplateDialog.Size/62.0.1618.1050/1680.0.1378.900@62.0.1618.1050" timestamp="1605189937540" />
     <state x="372" y="169" key="SettingsEditor" timestamp="1604933350576">
       <screen x="62" y="0" width="1618" height="1050" />
     </state>
@@ -128,9 +153,9 @@
       <screen x="1680" y="0" width="1378" height="900" />
     </state>
     <state x="1680" y="50" width="1309" height="869" key="dock-window-2/62.0.1618.1050/1680.0.1378.900@62.0.1618.1050" timestamp="1604947717305" />
-    <state x="549" y="258" width="644" height="534" key="find.popup" timestamp="1605125325991">
+    <state x="549" y="258" width="644" height="534" key="find.popup" timestamp="1605192220371">
       <screen x="62" y="0" width="1618" height="1050" />
     </state>
-    <state x="549" y="258" width="644" height="534" key="find.popup/62.0.1618.1050/1680.0.1378.900@62.0.1618.1050" timestamp="1605125325991" />
+    <state x="549" y="258" width="644" height="534" key="find.popup/62.0.1618.1050/1680.0.1378.900@62.0.1618.1050" timestamp="1605192220371" />
   </component>
 </project>

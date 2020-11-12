@@ -15,27 +15,27 @@ interface SearchMoviesResponse {
 })
 export class MovieService {
   rateMovie(movie: Movie) {
-    const parsedBody = {
-      Title: movie.Title,
-      Genre: movie.Genre,
-      Director: movie.Director,
-      Rate: movie.Rate,
-      Year: parseInt(movie.Year as any),
-      Rated: movie.Rated,
-      Released: new Date(movie.Released),
-      Writer: movie.Writer,
-      Runtime: parseInt(movie.Runtime),
-      Actors: movie.Actors,
-      Plot: movie.Plot,
-      Country: movie.Country,
-      Awards: movie.Awards,
-      Metascore: movie.Metascore,
-      UserId: parseInt(this.authService.getUserData().Id),
-      Poster: movie.Poster,
-      imdbID: movie.imdbID,
-      MovieId: movie.MovieId,
-    };
     if (movie.MovieId) {
+      const parsedBody = {
+        Title: movie.Title,
+        Genre: movie.Genre,
+        Director: movie.Director,
+        Rate: movie.Rate,
+        Year: parseInt(movie.Year as any),
+        Rated: movie.Rated,
+        Released: new Date(movie.Released),
+        Writer: movie.Writer,
+        Runtime: parseInt(movie.Runtime),
+        Actors: movie.Actors,
+        Plot: movie.Plot,
+        Country: movie.Country,
+        Awards: movie.Awards,
+        Metascore: movie.Metascore,
+        UserId: parseInt(this.authService.getUserData().Id),
+        Poster: movie.Poster,
+        imdbID: movie.imdbID,
+        MovieId: movie.MovieId,
+      };
       this.http
         .put("https://localhost:5001/api/movies/" + movie.MovieId, parsedBody, {
           headers: { Authorization: "Bearer " + this.authService.getToken() },
@@ -47,6 +47,26 @@ export class MovieService {
           });
         });
     } else {
+      const parsedBody = {
+        Title: movie.Title,
+        Genre: movie.Genre,
+        Director: movie.Director,
+        Rate: movie.Rate,
+        Year: parseInt(movie.Year as any),
+        Rated: movie.Rated,
+        Released: new Date(movie.Released),
+        Writer: movie.Writer,
+        Runtime: parseInt(movie.Runtime),
+        Actors: movie.Actors,
+        Plot: movie.Plot,
+        Country: movie.Country,
+        Awards: movie.Awards,
+        Metascore: movie.Metascore,
+        UserId: parseInt(this.authService.getUserData().Id),
+        Poster: movie.Poster,
+        imdbID: movie.imdbID,
+        //MovieId: movie.MovieId,
+      };
       this.http
         .post("https://localhost:5001/api/movies", parsedBody, {
           headers: { Authorization: "Bearer " + this.authService.getToken() },
