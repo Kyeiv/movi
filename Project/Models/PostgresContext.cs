@@ -79,7 +79,7 @@ namespace Project.Models
 
                 entity.Property(m => m.Password)
                     .IsRequired()
-                    .HasMaxLength(20)
+                    .HasMaxLength(256)
                     .IsUnicode(false);
 
                 entity.Property(m => m.UserName)

@@ -30,10 +30,16 @@ namespace Project.Controllers
 
             if (_userData != null && _userData.Email != null && _userData.Password != null)
             {
-                var user = await GetUser(_userData.Email, _userData.Password);
+                var user = await GetUser(_userData.Email);
 
                 if (user != null)
                 {
+                    var isPasswordOk = BCrypt.Net.BCrypt.Verify(_userData.Password, user.Password);
+
+                    if (!isPasswordOk)
+                    {
+                        return BadRequest("Invalid credentials");
+                    }
                     //create claims details based on the user information
                     var claims = new[] {
                     new Claim(JwtRegisteredClaimNames.Sub, _configuration["Jwt:Subject"]),
@@ -65,9 +71,9 @@ namespace Project.Controllers
             }
         }
 
-        private async Task<UserInfo> GetUser(string email, string password)
+        private async Task<UserInfo> GetUser(string email)
         {
-            return await _context.UserInfo.FirstOrDefaultAsync(u => u.Email == email && u.Password == password);
+            return await _context.UserInfo.FirstOrDefaultAsync(u => u.Email == email);
         }
     }
 }

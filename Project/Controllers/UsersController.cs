@@ -79,6 +79,13 @@ namespace Project.Controllers
         [HttpPost]
         public async Task<ActionResult<UserInfo>> PostUserInfo(UserInfo userInfo)
         {
+            var alreadyExistingUser = await _context.UserInfo.FirstOrDefaultAsync(u => u.Email == userInfo.Email || u.UserName == userInfo.UserName);
+            if (alreadyExistingUser != null)
+            {
+                return BadRequest("User with given Username or Email already exists!");
+            }
+            
+            userInfo.Password = BCrypt.Net.BCrypt.HashPassword(userInfo.Password);
             _context.UserInfo.Add(userInfo);
             await _context.SaveChangesAsync();
 
